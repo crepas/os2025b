@@ -1,0 +1,20 @@
+리눅스 명령어
+- ls
+- ls 옵션 a
+- touch 파일명
+- cd 폴더명
+- cd ..
+- cat 파일명
+
+깃 명령어
+- git init                                                           < 현재 폴더를 작업 폴더로 설정
+- git status                                                       < 현재 상태를 확인하는 명령어
+- git add 파일명                                                 < stage에 올리는 명령어 
+- git add .
+- git config --global user.email "개인이메일주소"
+- git config --global user.name "ID"
+- git config --list                                               < 현재 설정된 값들을 확인하는 명령어
+- git commit -m "커밋에 남길 메세지"
+- git log                                                           < 커밋 개수 확인
+- git checkout 해시코드전체 또는 7자리                < 시간여행
+- git checkout -                                                < 바로 전으로 돌아가기
