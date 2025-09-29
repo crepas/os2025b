@@ -2,13 +2,16 @@ package main
 
 import (
 	"fmt"
-	"math"
-	"strings"
+	"reflect"
 )
 
 func main() {
-	fmt.Println(math.Round(2.31))
-	fmt.Println(strings.Title("go developer~"))
-	fmt.Println("Kim\nInha\t\"\\")
-	fmt.Println('A', '가')
+	// var name string = "Kim Inha"
+	// var id int = 1000
+
+	name := "kim inha"
+	id := 1000
+
+	fmt.Println(name, reflect.TypeOf(name))
+	fmt.Println(id, reflect.TypeOf(id))
 }
