@@ -9,4 +9,6 @@ import (
 func main() {
 	fmt.Println(math.Round(2.31))
 	fmt.Println(strings.Title("go developer~"))
+	fmt.Println("Kim\nInha\t\"\\")
+	fmt.Println('A', '가')
 }
