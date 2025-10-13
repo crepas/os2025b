@@ -13,6 +13,7 @@ git merge 브랜치명
 
 기타
 .gitignore 파일 생성(*.exe)
+package, import, func, Println, Printf, {}, ;
 
 go언어 장점
 빠른 컴파일 속도
