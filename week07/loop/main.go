@@ -30,6 +30,8 @@ func main() {
 
 	r := bufio.NewReader(os.Stdin)
 	i, err := r.ReadString('\n') // 리턴을 문자열과 에러로 받음
-	log.Fatal(err)
+	if err != nil {
+		log.Fatal(err)
+	}
 	fmt.Println(i)
 }
