@@ -1,11 +1,13 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"strings"
-
+	"log"
+	"os"
+	//"strings"
 	//"reflect"
-	"time"
+	//"time"
 )
 
 func main() {
@@ -15,13 +17,19 @@ func main() {
 	// fmt.Println("length > width?", length > float64(width))
 	// fmt.Println("형변환", reflect.TypeOf(int(length)))
 	// fmt.Println("원본", reflect.TypeOf(length))
-	var now time.Time = time.Now()
-	var month time.Month = now.Month() // month:=now.Month()
-	var day int = now.Day()
-	fmt.Println(month, day)
 
-	broken := "G# r#cks!"
-	replacer := strings.NewReplacer("#", "o")
-	fixed := replacer.Replace(broken)
-	fmt.Println(fixed)
+	// var now time.Time = time.Now()
+	// var month time.Month = now.Month() // month:=now.Month()
+	// var day int = now.Day()
+	// fmt.Println(month, day)
+
+	// univ := "G# r#cks!"
+	// replacer := strings.NewReplacer("#", "o")
+	// fixed := replacer.Replace(univ)
+	// fmt.Println(fixed)
+
+	r := bufio.NewReader(os.Stdin)
+	i, err := r.ReadString('\n') // 리턴을 문자열과 에러로 받음
+	log.Fatal(err)
+	fmt.Println(i)
 }
