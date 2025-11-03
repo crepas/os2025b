@@ -1,12 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	var arrayBool [3]bool
-	var arrayInt [3]int
-	fmt.Println(arrayBool[1])
-	arrayInt[1]++
-	arrayInt[1] = arrayInt[1] + 1
-	fmt.Println(arrayInt[1])
+	//arrayBool := [2]bool{true, false}
+	//arrayInt := [3]int{-9, 11, 7}
+	//for i := 0; i < len(arrayInt); i++ {
+	//fmt.Println(i, arrayBool[i])
+	//	fmt.Println(i, arrayInt[i])
+	//}
+
+	numbers := [3]int{-9, 11, 7}
+
+	for i, number := range numbers {
+		fmt.Println(i, number)
+	}
 }
