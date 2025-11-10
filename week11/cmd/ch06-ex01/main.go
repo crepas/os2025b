@@ -23,9 +23,9 @@ func main() {
 	// }
 
 	subjects := [4]string{"Go", "Javascript", "Python", "Linux"} // slice literal
-	subjectSlice := subjects[1:3]                                // slicing
+	subjectSlice := subjects[:3]                                 // slicing
 	subjects[0] = "JAVA"
-	//subjectSlice[0] = "Java"
+	subjectSlice = append(subjectSlice, "Go", "database")
 	for _, subject := range subjects {
 		fmt.Println(subject)
 	}
